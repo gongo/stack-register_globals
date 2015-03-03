@@ -1,0 +1,28 @@
+{
+    "name": "gongo/stack-register_globals",
+    "description": "register_globals (emulator) stack middleware",
+    "version": "0.0.1",
+    "require": {
+        "symfony/http-kernel": "~2.6.0",
+        "symfony/http-foundation": "~2.6.0",
+        "gongo/merciful-polluter": "~0.0.3"
+    },
+    "require-dev": {
+        "silex/silex": "~1.2.0",
+        "stack/builder": "~1.0.0",
+        "twig/twig": "~1.8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wataru MIYAGUNI",
+            "email": "gonngo@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Gongo\\": "src/"
+        }
+    }
+}

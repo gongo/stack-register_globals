@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+     td, th {
+         border: 2px solid black;
+         padding: 1em;
+     }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th>key</th>
+        <th>request-&gt;get()</th>
+        <th>GLOBALS[]</th>
+      </thead>
+      <tbody>
+        {% for k, v in records %}
+          <tr>
+            <td>{{ k }}</td>
+            <td>{{ v.request }}</td>
+            <td>{{ v.global }} </td>
+          </tr>
+        {% endfor %}
+      <tbody>
+    </table>
+  </body>
+</html>
